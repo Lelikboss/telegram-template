@@ -1,0 +1,31 @@
+.header {
+  background-color: lawngreen;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__logo {
+    display: flex;
+  }
+  &__logo-img {
+    width: 39px;
+    height: 28px;
+  }
+  &__logo-name {
+    margin-left: 1px;
+    font-family: var(--bold-font);
+    font-size: 20px;
+    line-height: 1;
+    /* identical to box height, or 100% */
+  }
+  &__btn {
+    width: 30px;
+    height: 18px;
+  }
+  &__btn-icon {
+    width: inherit;
+    height: inherit;
+  }
+}
