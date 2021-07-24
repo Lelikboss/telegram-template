@@ -1,0 +1,46 @@
+.hero {
+  background-color: lightcoral;
+  padding-top: 25px;
+  padding-bottom: 4px;
+  //   &__container {
+  //     padding-bottom: 318px;
+  //     background-image: url(/images/hero.bg.png);
+  //     background-repeat: no-repeat;
+  //     background-size: 100% 50%;
+  //     background-position: bottom;
+  //   }
+  &__title {
+    max-width: 245px;
+    margin-bottom: 32px;
+    font-family: var(--extrabold-font);
+    font-size: 32px;
+    line-height: 1.25;
+    /* or 125% */
+  }
+  &__title--change-color {
+    color: var(--accent-color);
+  }
+  &__content {
+    margin-bottom: 32px;
+    font-size: 18px;
+    line-height: 1.56;
+    /* or 156% */
+  }
+  &__content--color {
+    color: var(--accent-color);
+    font-family: var(--bold-font);
+  }
+  &__btn {
+    margin-bottom: 48px;
+    font-family: var(--bold-font);
+    font-size: 18px;
+    line-height: 1.33;
+    /* identical to box height, or 133% */
+    text-align: center;
+    color: var(--white-color);
+    background-color: var(--accent-color);
+    padding: 12px 32px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
+    border-radius: 6px;
+  }
+}
