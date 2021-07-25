@@ -391,4 +391,52 @@ address {
   border-radius: 50px;
   margin-left: 5px;
 }
+
+.connection__container {
+  text-align: center;
+}
+
+.connection__title {
+  max-width: 331px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.connection__item {
+  margin: 0 auto;
+  max-width: 214px;
+  padding-top: 23px;
+  padding-bottom: 24px;
+}
+
+.connection__number {
+  margin-bottom: 16px;
+  display: inline-block;
+  padding-top: 22px;
+  padding-bottom: 25px;
+  width: 72px;
+  height: 72px;
+  border-radius: 50px;
+  background: #f1e4ff;
+  border-radius: 100px;
+  font-family: var(--bold-font);
+  font-size: 30px;
+  line-height: 1;
+  /* or 100% */
+  color: var(--accent-color);
+}
+
+.connection__item-title {
+  margin-bottom: 4px;
+  font-family: var(--bold-font);
+  font-size: 18px;
+  line-height: 1.56;
+}
+
+.connection__text {
+  margin-bottom: 42px;
+  font-size: 14px;
+  line-height: 1.57;
+  /* or 157% */
+}
 /*# sourceMappingURL=styles.css.map */
