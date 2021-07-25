@@ -56,7 +56,8 @@
 }
 
 .header {
-  background-color: lawngreen;
+  background: rgba(242, 247, 255, 0.5);
+  backdrop-filter: blur(100px);
   padding-top: 25px;
   padding-bottom: 25px;
 }
@@ -167,7 +168,8 @@ address {
 }
 
 .hero {
-  background-color: lightcoral;
+  background: rgba(242, 247, 255, 0.5);
+  backdrop-filter: blur(100px);
   padding-top: 25px;
   padding-bottom: 4px;
 }
@@ -212,6 +214,8 @@ address {
 }
 
 .about {
+  background: rgba(242, 247, 255, 0.5);
+  backdrop-filter: blur(100px);
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -265,9 +269,9 @@ address {
   position: relative;
   z-index: 100;
   padding-top: 85px;
-  padding-left: 37px;
-  padding-right: 37px;
-  max-width: 300px;
+  padding-left: 68px;
+  padding-right: 17px;
+  max-width: 310px;
   font-family: var(--regular-font);
   font-size: 9px;
   line-height: 1.22;
@@ -295,5 +299,96 @@ address {
   z-index: -1;
   position: absolute;
   top: 0;
+}
+
+.tariffs {
+  padding-top: 54px;
+  padding-bottom: 54px;
+  text-align: center;
+}
+
+.tariffs__title {
+  margin-bottom: 8px;
+}
+
+.tariffs__pretitle {
+  margin-bottom: 32px;
+  max-width: 214px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: var(--bold-font);
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.tariffs__list {
+  display: flex;
+  justify-content: center;
+}
+
+.tariffs__item {
+  padding-bottom: 50px;
+  margin-bottom: 24px;
+  background: #fcfeff;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
+  border-radius: 6px;
+}
+
+.tariffs__item-title {
+  padding-top: 6px;
+  padding-bottom: 7px;
+  margin-bottom: 0;
+  min-width: 330px;
+  font-family: var(--bold-font);
+  font-size: 24px;
+  line-height: 2;
+  /* identical to box height, or 200% */
+  color: var(--accent-color);
+  background: rgba(104, 94, 214, 0.05);
+}
+
+.tariffs__item-pretitle {
+  padding-top: 40px;
+  margin-bottom: 32px;
+  font-family: var(--bold-font);
+  font-size: 28px;
+  line-height: 1.43;
+  /* or 143% */
+}
+
+.tariffs__item-price {
+  margin-bottom: 46px;
+  font-family: var(--medium-font);
+  font-size: 20px;
+  line-height: 1.5;
+  /* identical to box height, or 150% */
+}
+
+.tariffs__item-btn {
+  margin-bottom: 0;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 57.5px;
+  padding-left: 57.5px;
+  font-family: var(--bold-font);
+  font-size: 18px;
+  line-height: 1.33;
+  /* identical to box height, or 133% */
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
+  border-radius: 6px;
+}
+
+.dots--item {
+  margin-bottom: 54px;
+  display: inline-block;
+  opacity: 0.5;
+  /* violet */
+  width: 10px;
+  height: 10px;
+  border: 1px solid #685ed6;
+  border-radius: 50px;
+  margin-left: 5px;
 }
 /*# sourceMappingURL=styles.css.map */

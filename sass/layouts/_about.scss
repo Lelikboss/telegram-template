@@ -1,4 +1,6 @@
 .about {
+  background: rgba(242, 247, 255, 0.5);
+  backdrop-filter: blur(100px);
   padding-top: 60px;
   padding-bottom: 60px;
   &__title {
@@ -45,9 +47,9 @@
     position: relative;
     z-index: 100;
     padding-top: 85px;
-    padding-left: 37px;
-    padding-right: 37px;
-    max-width: 300px;
+    padding-left: 68px;
+    padding-right: 17px;
+    max-width: 310px;
     font-family: var(--regular-font);
     font-size: 9px;
     line-height: 1.22;

@@ -1,5 +1,6 @@
 .header {
-  background-color: lawngreen;
+  background: rgba(242, 247, 255, 0.5);
+  backdrop-filter: blur(100px);
   padding-top: 25px;
   padding-bottom: 25px;
   &__container {
