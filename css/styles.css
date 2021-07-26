@@ -381,7 +381,6 @@ address {
 }
 
 .dots--item {
-  margin-bottom: 54px;
   display: inline-block;
   opacity: 0.5;
   /* violet */
@@ -392,13 +391,21 @@ address {
   margin-left: 5px;
 }
 
+.connection {
+  background-image: url(../../images/bg.png);
+  background-position: bottom;
+  background-size: 100% 45%;
+  background-repeat: no-repeat;
+  padding-bottom: 26px;
+}
+
 .connection__container {
   text-align: center;
 }
 
 .connection__title {
+  margin: 0 auto;
   max-width: 331px;
-  text-align: center;
   margin-bottom: 24px;
 }
 
@@ -440,11 +447,18 @@ address {
   /* or 157% */
 }
 
+.connection--dots {
+  margin-bottom: 26px;
+}
+
 .reviews {
   background: rgba(242, 247, 255, 0.5);
   backdrop-filter: blur(100px);
   padding-top: 60px;
   padding-bottom: 51px;
+  background-image: url(../../images/kawuchi.png);
+  background-repeat: no-repeat;
+  background-position: 97% 20px;
 }
 
 .reviews__title {
@@ -455,9 +469,11 @@ address {
 .reviews__list {
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 
 .reviews--cloud {
+  max-width: 540px;
   text-align: center;
   padding-top: 32px;
   padding-bottom: 39px;
@@ -481,11 +497,61 @@ address {
   color: var(--rewiews-color);
 }
 
+.reviews__name {
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  margin-left: 16px;
+  font-family: var(--bold-font);
+  font-size: 18px;
+  line-height: 1.56;
+}
+
+.reviews__mail {
+  font-family: var(--regular-font);
+  font-size: 14px;
+  line-height: 1.71;
+  /* identical to box height, or 171% */
+}
+
+.reviews__photo {
+  width: 56px;
+  height: 56px;
+  border-radius: 50px;
+}
+
 .reviews--cloud {
+  position: relative;
+  margin-bottom: 21px;
   display: flex;
   flex-direction: column;
   background: #ffffff;
   /* Dark Shadow */
   box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+  background-repeat: no-repeat;
+}
+
+.reviews--cloud::before {
+  position: absolute;
+  content: "";
+  background-image: url(../../images/figure.svg);
+  background-repeat: no-repeat;
+  width: 14px;
+  height: 19px;
+  right: 50%;
+  bottom: -19px;
+}
+
+.reviews--persone {
+  margin: 0 auto;
+  margin-bottom: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 173px;
+}
+
+.dots--reviews {
+  text-align: center;
 }
 /*# sourceMappingURL=styles.css.map */
