@@ -1,0 +1,44 @@
+.send {
+  padding-top: 54px;
+  padding-bottom: 54px;
+  &__title {
+    margin: 0 auto;
+    margin-bottom: 16px;
+    max-width: 280px;
+    font-family: var(--bold-font);
+    font-size: 24px;
+    line-height: 32px;
+    color: var(--white-color);
+  }
+  &__input {
+    width: 150px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 16px;
+    background: #f4f5f7;
+    border-radius: 5px 0px 0px 5px;
+    border: none;
+  }
+  &__btn {
+    width: 120px;
+    padding: 12px 24px;
+    font-family: var(--bold-font);
+    font-size: 14px;
+    line-height: 1.43;
+    color: var(--white-color);
+    background-color: #18191f;
+    border-radius: 0px 5px 5px 0px;
+    /* identical to box height, or 143% */
+  }
+}
+.send--form {
+  display: flex;
+  justify-content: center;
+}
+.send--block {
+  margin: 0 auto;
+  max-width: 329px;
+  background-color: var(--accent-color);
+  border-radius: 6px;
+  padding: 40px 30px;
+}

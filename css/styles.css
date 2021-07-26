@@ -554,4 +554,115 @@ address {
 .dots--reviews {
   text-align: center;
 }
+
+.send {
+  padding-top: 54px;
+  padding-bottom: 54px;
+}
+
+.send__title {
+  margin: 0 auto;
+  margin-bottom: 16px;
+  max-width: 280px;
+  font-family: var(--bold-font);
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--white-color);
+}
+
+.send__input {
+  width: 150px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  background: #f4f5f7;
+  border-radius: 5px 0px 0px 5px;
+  border: none;
+}
+
+.send__btn {
+  width: 120px;
+  padding: 12px 24px;
+  font-family: var(--bold-font);
+  font-size: 14px;
+  line-height: 1.43;
+  color: var(--white-color);
+  background-color: #18191f;
+  border-radius: 0px 5px 5px 0px;
+  /* identical to box height, or 143% */
+}
+
+.send--form {
+  display: flex;
+  justify-content: center;
+}
+
+.send--block {
+  margin: 0 auto;
+  max-width: 329px;
+  background-color: var(--accent-color);
+  border-radius: 6px;
+  padding: 40px 30px;
+}
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 40px;
+  background: #1d2530;
+}
+
+.footer__container {
+  display: flex;
+}
+
+.footer__logo {
+  margin-right: 33px;
+}
+
+.footer__logo-name {
+  font-family: var(--bold-font);
+  font-size: 32px;
+  line-height: 0.75;
+  /* identical to box height, or 75% */
+  color: var(--white-color);
+}
+
+.footer__list {
+  font-family: var(--regular-font);
+  font-size: 16px;
+  line-height: 1.62;
+  /* identical to box height, or 162% */
+  color: rgba(238, 239, 244, 0.719);
+}
+
+.footer .footer__megalist-item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.footer .footer__list-item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.footer__list--title {
+  margin-bottom: 16px;
+  font-family: Gilroy;
+  font-size: 20px;
+  line-height: 1.5;
+  /* identical to box height, or 150% */
+  color: #f4f5f7e5;
+}
+
+.copyright {
+  background: #141b23;
+}
+
+.copyright__text {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 1.71;
+  /* identical to box height, or 171% */
+  color: #d9dbe1;
+}
 /*# sourceMappingURL=styles.css.map */

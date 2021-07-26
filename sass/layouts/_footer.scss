@@ -1,0 +1,53 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 40px;
+  background: #1d2530;
+  &__container {
+    display: flex;
+  }
+  &__logo {
+    margin-right: 33px;
+  }
+  &__logo-name {
+    font-family: var(--bold-font);
+    font-size: 32px;
+    line-height: 0.75;
+    /* identical to box height, or 75% */
+    color: var(--white-color);
+  }
+  &__list {
+    font-family: var((--regular-font));
+    font-size: 16px;
+    line-height: 1.62;
+    /* identical to box height, or 162% */
+    color: rgba(238, 239, 244, 0.719);
+  }
+  .footer__megalist-item:not(:last-child) {
+    margin-bottom: 24px;
+  }
+  .footer__list-item:not(:last-child) {
+    margin-bottom: 8px;
+  }
+  &__list--title {
+    margin-bottom: 16px;
+    font-family: Gilroy;
+    font-size: 20px;
+    line-height: 1.5;
+    /* identical to box height, or 150% */
+    color: #f4f5f7e5;
+  }
+}
+
+.copyright {
+  background: #141b23;
+  &__text {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 0;
+
+    font-size: 14px;
+    line-height: 1.71;
+    /* identical to box height, or 171% */
+    color: #d9dbe1;
+  }
+}
