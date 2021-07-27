@@ -57,7 +57,6 @@
 
 .header {
   background: rgba(242, 247, 255, 0.5);
-  backdrop-filter: blur(100px);
   padding-top: 25px;
   padding-bottom: 25px;
 }
@@ -87,9 +86,13 @@
 .header__btn {
   width: 30px;
   height: 18px;
+  position: relative;
+  z-index: 105;
 }
 
 .header__btn-icon {
+  position: relative;
+  z-index: 105;
   width: inherit;
   height: inherit;
 }
@@ -664,5 +667,51 @@ address {
   line-height: 1.71;
   /* identical to box height, or 171% */
   color: #d9dbe1;
+}
+
+.icon--close {
+  display: none;
+}
+
+.is-open .icon--close {
+  display: block;
+}
+
+.is-open .icon--open {
+  display: none;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: -150%;
+  width: 100%;
+  z-index: 100;
+  height: 100vh;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #ffffff;
+  transition: left 0.5s;
+}
+
+.mobile-menu.is-open {
+  left: 0;
+}
+
+.mobile-menu__list {
+  padding-top: 76px;
+  padding-right: 30px;
+  font-family: var(--bol);
+  font-size: 16px;
+  line-height: 1.5;
+  /* identical to box height, or 150% */
+}
+
+.mobile-menu__item:not(:last-child) {
+  margin-bottom: 24px;
 }
 /*# sourceMappingURL=styles.css.map */

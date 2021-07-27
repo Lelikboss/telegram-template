@@ -28,12 +28,35 @@
           <span class="header__logo-name logo--name">tocha</span>
         </a>
         <button class="header__btn menu--btn" data-menu-button>
-          <svg class="header__btn-icon icon--open">
-            <use href="./images/sprite.svg#icon-open-btn"></use>
+          <svg class="header__btn-icon">
+            <use
+              class="icon--open"
+              href="./images/sprite.svg#icon-open-btn"
+            ></use>
+            <use
+              class="icon--close"
+              href="./images/sprite.svg#icon-close-btn"
+            ></use>
           </svg>
         </button>
       </div>
     </header>
+    <div class="mobile-menu" data-menu>
+      <ul class="mobile-menu__list list">
+        <li class="mobile-menu__item">
+          <a class="link mobile-menu__link" href="">Подключение</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="link mobile-menu__link" href="">Оплата</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="link mobile-menu__link" href="">Контакты</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="link mobile-menu__link" href="">Выход</a>
+        </li>
+      </ul>
+    </div>
     <section class="section hero">
       <div class="container hero__container">
         <h1 class="title hero__title">

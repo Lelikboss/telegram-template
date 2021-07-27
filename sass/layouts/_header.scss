@@ -1,6 +1,5 @@
 .header {
   background: rgba(242, 247, 255, 0.5);
-  backdrop-filter: blur(100px);
   padding-top: 25px;
   padding-bottom: 25px;
   &__container {
@@ -24,8 +23,12 @@
   &__btn {
     width: 30px;
     height: 18px;
+    position: relative;
+    z-index: 105;
   }
   &__btn-icon {
+    position: relative;
+    z-index: 105;
     width: inherit;
     height: inherit;
   }
