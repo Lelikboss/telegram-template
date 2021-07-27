@@ -15,7 +15,29 @@
 
 var slider = Peppermint(document.getElementById("peppermint"), {
   dots: true,
-  slideshow: false,
+  slideshow: true,
+  speed: 500,
+  slideshowInterval: 5000,
+  stopSlideshowAfterInteraction: true,
+  onSetup: function (n) {
+    console.log("Peppermint setup done. Slides found: " + n);
+  },
+});
+
+var connectSlider = Peppermint(document.getElementById("peppermint-connect"), {
+  dots: true,
+  slideshow: true,
+  speed: 500,
+  slideshowInterval: 5000,
+  stopSlideshowAfterInteraction: true,
+  onSetup: function (n) {
+    console.log("Peppermint setup done. Slides found: " + n);
+  },
+});
+
+var connectSlider = Peppermint(document.getElementById("peppermint-reviews"), {
+  dots: true,
+  slideshow: true,
   speed: 500,
   slideshowInterval: 5000,
   stopSlideshowAfterInteraction: true,

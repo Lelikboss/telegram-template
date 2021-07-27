@@ -6,6 +6,7 @@
   padding-bottom: 26px;
   &__container {
     text-align: center;
+    padding-right: 0;
   }
   &__title {
     margin: 0 auto;
@@ -14,7 +15,6 @@
   }
   &__item {
     margin: 0 auto;
-    max-width: 214px;
     padding-top: 23px;
     padding-bottom: 24px;
   }
@@ -45,6 +45,9 @@
     font-size: 14px;
     line-height: 1.57;
     /* or 157% */
+  }
+  &__img {
+    display: inline-block;
   }
 }
 .connection--dots {

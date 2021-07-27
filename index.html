@@ -181,38 +181,6 @@
             <button class="tariffs__item-btn">Подключить за 500₽</button>
           </li>
         </ul>
-        <!-- <ul
-          class="
-            tariffs__list
-            list
-            tariffs__slider
-            peppermint peppermint-inactive
-          "
-          id="peppermint"
-        >
-          <li class="tariffs__item">
-            <h3 class="tariffs__item-title">Бесплатно</h3>
-            <h4 class="tariffs__item-pretitle">Пробный период на 1 месяц</h4>
-            <p class="tariffs__item-price">0₽/первый месяц</p>
-            <button class="tariffs__item-btn">Подключить за 0₽</button>
-          </li>
-          <li class="tariffs__item">
-            <h3 class="tariffs__item-title">Базовый</h3>
-            <h4 class="tariffs__item-pretitle">Менее 1000 посещений в сутки</h4>
-            <p class="tariffs__item-price">200₽/месяц</p>
-            <button class="tariffs__item-btn">Подключить за 200₽</button>
-          </li>
-          <li class="tariffs__item">
-            <h3 class="tariffs__item-title">Премиум</h3>
-            <h4 class="tariffs__item-pretitle">Более 1000 посещений в сутки</h4>
-            <p class="tariffs__item-price">500₽/месяц</p>
-            <button class="tariffs__item-btn">Подключить за 500₽</button>
-          </li>
-        </ul> -->
-        <!-- <div class="dots tariffs--dots">
-          <span class="dots--item"></span><span class="dots--item"></span
-          ><span class="dots--item"></span>
-        </div> -->
       </div>
     </section>
     <section class="section connection">
@@ -220,7 +188,16 @@
         <h2 class="connection__title title">
           Всего 3 шага для подключения Telegram чата
         </h2>
-        <ul class="connection__list list connection__slider">
+        <ul
+          class="
+            connection__list
+            list
+            connection__slider
+            peppermint peppermint-inactive
+            list
+          "
+          id="peppermint-connect"
+        >
           <li class="connection__item">
             <p class="connection__number">1</p>
             <h3 class="connection__item-title">Telegram bot</h3>
@@ -229,13 +206,13 @@
             </p>
             <img class="connection__img" src="./images/connect1.png" alt="" />
           </li>
-          <!-- <li class="connection__item">
+          <li class="connection__item">
             <p class="connection__number">2</p>
             <h3 class="connection__item-title">Подключение Tocha</h3>
             <p class="connection__text">
               Tocha подключает Telegram бота к вашиму сайту
             </p>
-            <img class="connection__img" src="" alt="" />
+            <img class="connection__img" src="./images/connect2.png" alt="" />
           </li>
           <li class="connection__item">
             <p class="connection__number">3</p>
@@ -243,19 +220,18 @@
             <p class="connection__text">
               Консультант отвечает на вопросы посетителей сайта
             </p>
-            <img class="connection__img" src="" alt="" />
-          </li> -->
+            <img class="connection__img" src="./images/connect3.png" alt="" />
+          </li>
         </ul>
-        <div class="dots connection--dots">
-          <span class="dots--item"></span><span class="dots--item"></span
-          ><span class="dots--item"></span>
-        </div>
       </div>
     </section>
     <section class="section reviews">
       <div class="container">
         <h2 class="reviews__title title">Отзывы клиентов</h2>
-        <ul class="reviews__list list">
+        <ul
+          class="reviews__list list peppermint peppermint-inactive"
+          id="peppermint-reviews"
+        >
           <li class="reviews__item">
             <div class="reviews--cloud">
               <h3 class="reviews__item-title">Как же удобно!</h3>
@@ -277,7 +253,7 @@
               </p>
             </div>
           </li>
-          <!-- <li class="reviews__item">
+          <li class="reviews__item">
             <div class="reviews--cloud">
               <h3 class="reviews__item-title">
                 Теперь мы идем в ногу со временем
@@ -289,16 +265,18 @@
                 исследования конкурентов формируют сеть.
               </p>
             </div>
-            <h4 class="reviews__name">Андрей Васильев</h4>
-            <a class="reviews__mail" href="mailto:samogon-ont.ru"
-              >samogon-ont.ru</a
-            >
-          </li> -->
+            <div class="reviews--persone">
+              <img class="reviews__photo" src="./images/client2.jpg" alt="" />
+              <p class="reviews__name">
+                Андрей Васильев<a
+                  class="reviews__mail link"
+                  href="mailto:samogon-ont.ru"
+                  >samogon-ont.ru</a
+                >
+              </p>
+            </div>
+          </li>
         </ul>
-        <div class="dots dots--reviews">
-          <span class="dots--item"></span><span class="dots--item"></span
-          ><span class="dots--item"></span>
-        </div>
       </div>
     </section>
     <section class="section send">
