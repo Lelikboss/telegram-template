@@ -24,9 +24,28 @@
     <header class="header">
       <div class="container header__container">
         <a href="" class="header__logo logo link">
-          <img class="header__logo-img" src="./images/logo.png" alt="Tocha" />
+          <picture>
+            <source
+              srcset="./images/logo.png 1x"
+              media="(min-width: 1200px)"
+              type="image/jpg"
+            />
+            <source
+              srcset="./images/logo-tablet.png 1x"
+              media="(min-width: 768px)"
+              type="image/jpg"
+            />
+            <img class="header__logo-img" src="./images/logo.png" alt="Tocha" />
+          </picture>
+
           <span class="header__logo-name logo--name">tocha</span>
         </a>
+        <div class="header__btn-block">
+          <button class="header__btn-tabl header__btn-tabl--enter">Вход</button>
+          <button class="header__btn-tabl header__btn-tabl--reg">
+            Регистрация
+          </button>
+        </div>
         <button class="header__btn menu--btn" data-menu-button>
           <svg class="header__btn-icon">
             <use
@@ -59,65 +78,86 @@
     </div>
     <section class="section hero">
       <div class="container hero__container">
-        <h1 class="title hero__title">
-          <span class="hero__title--change-color">Telegram чат</span> на вашем
-          сайте
-        </h1>
-        <ul class="hero__content list">
-          <li class="hero__content-item">
-            Общение с клиентами станет простым и удобным, а подключение займёт
-            5 минут.
-          </li>
-          <li class="hero__content-item">
-            Первый месяц — <span class="hero__content--color">бесплатно!</span>
-          </li>
-        </ul>
-        <button class="hero__btn btn">Подключить</button>
-        <img src="./images/hero.bg.png" alt="asd" />
+        <div class="hero__container--block">
+          <h1 class="title hero__title">
+            <span class="hero__title--change-color">Telegram чат</span> на вашем
+            сайте
+          </h1>
+          <ul class="hero__content list">
+            <li class="hero__content-item">
+              Общение с клиентами станет простым и удобным, а подключение займёт
+              5 минут.
+            </li>
+            <li class="hero__content-item">
+              Первый месяц —
+              <span class="hero__content--color">бесплатно!</span>
+            </li>
+            <li class="hero__content-item">
+              <button class="hero__btn btn">Подключить</button>
+            </li>
+          </ul>
+        </div>
+        <picture>
+          <source
+            srcset="./images/hero.bg.png 1x"
+            media="(max-width: 767.98px)"
+            type="image/png"
+          />
+          <source
+            srcset="./images/bg2.png 1x"
+            media="(min-width: 768px)"
+            type="image/png"
+          />
+          <img src="./images/hero.bg.png" alt="asd" />
+        </picture>
       </div>
     </section>
     <section class="section about">
-      <div class="container">
-        <h2 class="about__title title">Tocha Online — это</h2>
-        <ul class="about__list list">
-          <li class="about__item">
-            <svg class="about__item-icon" width="42" height="42">
-              <use href="./images/sprite.svg#icon-first"></use>
-            </svg>
-            <h3 class="about__item-title">Ничего лишнего</h3>
-            <p class="about__item-text">
-              Отсутствие лишних приложений для операторов. Оператору не нужно
-              учиться работать с чатом
-            </p>
-          </li>
-          <li class="about__item">
-            <svg
-              class="about__item-icon about__item-icon--top"
-              width="42"
-              height="42"
-            >
-              <use href="./images/sprite.svg#icon-second"></use>
-            </svg>
-            <h3 class="about__item-title">Простота</h3>
-            <p class="about__item-text">Простая установка на сайт</p>
-          </li>
-          <li class="about__item">
-            <svg class="about__item-icon" width="42" height="42">
-              <use href="./images/sprite.svg#icon-third"></use>
-            </svg>
-            <h3 class="about__item-title">Несколько ассистентов</h3>
-            <p class="about__item-text">
-              Возможность подключения нескольких ассистентов
-            </p>
-          </li>
-          <li class="about__item">
-            <svg class="about__item-icon" width="42" height="42">
-              <use href="./images/sprite.svg#icon-fourth"></use>
-            </svg>
-            <h3 class="about__item-title">Кастомизация</h3>
-            <p class="about__item-text">Настройка интерфейса под нужды сайта</p>
-          </li>
-        </ul>
+      <div class="container about__container">
+        <div class="container__about--block">
+          <h2 class="about__title title">Tocha Online — это</h2>
+          <ul class="about__list list">
+            <li class="about__item">
+              <svg class="about__item-icon" width="42" height="42">
+                <use href="./images/sprite.svg#icon-first"></use>
+              </svg>
+              <h3 class="about__item-title">Ничего лишнего</h3>
+              <p class="about__item-text">
+                Отсутствие лишних приложений для операторов. Оператору не нужно
+                учиться работать с чатом
+              </p>
+            </li>
+            <li class="about__item">
+              <svg
+                class="about__item-icon about__item-icon--top"
+                width="42"
+                height="42"
+              >
+                <use href="./images/sprite.svg#icon-second"></use>
+              </svg>
+              <h3 class="about__item-title">Простота</h3>
+              <p class="about__item-text">Простая установка на сайт</p>
+            </li>
+            <li class="about__item">
+              <svg class="about__item-icon" width="42" height="42">
+                <use href="./images/sprite.svg#icon-third"></use>
+              </svg>
+              <h3 class="about__item-title">Несколько ассистентов</h3>
+              <p class="about__item-text">
+                Возможность подключения нескольких ассистентов
+              </p>
+            </li>
+            <li class="about__item">
+              <svg class="about__item-icon" width="42" height="42">
+                <use href="./images/sprite.svg#icon-fourth"></use>
+              </svg>
+              <h3 class="about__item-title">Кастомизация</h3>
+              <p class="about__item-text">
+                Настройка интерфейса под нужды сайта
+              </p>
+            </li>
+          </ul>
+        </div>
         <ul class="about__rules list">
           <li class="about__rules-item">
             Здравствуйте! а расскажите о работе Tocha Online.
@@ -193,8 +233,8 @@
             connection__list
             list
             connection__slider
-            peppermint peppermint-inactive
             list
+            peppermint peppermint-inactive
           "
           id="peppermint-connect"
         >

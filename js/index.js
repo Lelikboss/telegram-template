@@ -34,8 +34,7 @@ var connectSlider = Peppermint(document.getElementById("peppermint-connect"), {
     console.log("Peppermint setup done. Slides found: " + n);
   },
 });
-
-var connectSlider = Peppermint(document.getElementById("peppermint-reviews"), {
+var reviewsSlider = Peppermint(document.getElementById("peppermint-reviews"), {
   dots: true,
   slideshow: true,
   speed: 500,

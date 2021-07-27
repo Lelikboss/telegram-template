@@ -9,27 +9,60 @@
   &__logo {
     display: flex;
   }
-  &__logo-img {
-    width: 39px;
-    height: 28px;
-  }
   &__logo-name {
     margin-left: 1px;
     font-family: var(--bold-font);
     font-size: 20px;
     line-height: 1;
     /* identical to box height, or 100% */
+    @media screen and (min-width: 768px) {
+      font-family: var(--bold-font);
+      font-size: 28px;
+      line-height: 0.75;
+      /* or 75% */
+    }
   }
   &__btn {
     width: 30px;
     height: 18px;
     position: relative;
     z-index: 105;
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
   }
   &__btn-icon {
     position: relative;
     z-index: 105;
     width: inherit;
     height: inherit;
+  }
+  @media screen and (max-width: 767.98px) {
+    &__btn-block {
+      display: none;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    &__btn-block {
+      display: flex;
+    }
+    &__btn-tabl {
+      padding: 10px 20px;
+      font-family: var(--bold-font);
+      font-size: 16px;
+      line-height: 1.25;
+      /* identical to box height, or 125% */
+      border-radius: 6px;
+    }
+    &__btn-tabl--enter {
+      margin-right: 11px;
+      background-color: #f1e4ff;
+      color: var(--accent-color);
+    }
+    &__btn-tabl--reg {
+      background-color: var(--accent-color);
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
+      color: var(--white-color);
+    }
   }
 }
