@@ -4,6 +4,7 @@
   background: #1d2530;
   &__container {
     display: flex;
+    justify-content: space-between;
   }
   &__logo {
     margin-right: 33px;
@@ -21,6 +22,18 @@
     line-height: 1.62;
     /* identical to box height, or 162% */
     color: rgba(238, 239, 244, 0.719);
+  }
+  &__megalist {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      min-width: 360px;
+    }
+  }
+  &__megalist-item {
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 24px / 2) / 2);
+    }
   }
   .footer__megalist-item:not(:last-child) {
     margin-bottom: 24px;

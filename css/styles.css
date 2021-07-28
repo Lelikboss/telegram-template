@@ -734,6 +734,7 @@ address {
 
 .footer__container {
   display: flex;
+  justify-content: space-between;
 }
 
 .footer__logo {
@@ -754,6 +755,20 @@ address {
   line-height: 1.62;
   /* identical to box height, or 162% */
   color: rgba(238, 239, 244, 0.719);
+}
+
+@media screen and (min-width: 768px) {
+  .footer__megalist {
+    display: flex;
+    justify-content: space-between;
+    min-width: 360px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer__megalist-item {
+    width: calc((100% - 24px / 2) / 2);
+  }
 }
 
 .footer .footer__megalist-item:not(:last-child) {
