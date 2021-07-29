@@ -42,16 +42,36 @@
             />
             <img class="header__logo-img" src="./images/logo.png" alt="Tocha" />
           </picture>
-
           <span class="header__logo-name logo--name">tocha</span>
         </a>
-        <div class="header__btn-block">
-          <button class="header__btn-tabl header__btn-tabl--enter">Вход</button>
-          <button class="header__btn-tabl header__btn-tabl--reg">
+        <nav class="header__nav nav inactive--menu header--nav">
+          <ul class="list nav__list">
+            <li class="nav__item">
+              <a class="nav__link link" href="">Подключение</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="">Оплата</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="">Контакты</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="">Выход</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__btn-block header-author--btn">
+          <button
+            type="button"
+            class="header__btn-tabl header__btn-tabl--enter tablet-enter--btn"
+          >
+            Вход
+          </button>
+          <button type="button" class="header__btn-tabl header__btn-tabl--reg">
             Регистрация
           </button>
         </div>
-        <button class="header__btn menu--btn" data-menu-button>
+        <button class="header__btn" data-menu-button>
           <svg class="header__btn-icon">
             <use
               class="icon--open"
@@ -66,7 +86,22 @@
       </div>
     </header>
     <div class="mobile-menu" data-menu>
-      <ul class="mobile-menu__list list">
+      <ul class="mobile-menu__author list mobile-author--block">
+        <li class="mobile-menu__author-item">
+          <button type="button" class="mobile-menu__author-btn btn enter--btn">
+            Вход
+          </button>
+        </li>
+        <li class="mobile-menu__author-item">
+          <button
+            type="button"
+            class="mobile-menu__author-btn btn registr--btn"
+          >
+            Регистрация
+          </button>
+        </li>
+      </ul>
+      <ul class="mobile-menu__list list mobile--menu inactive--menu">
         <li class="mobile-menu__item">
           <a class="link mobile-menu__link" href="">Подключение</a>
         </li>
@@ -314,15 +349,17 @@
       <div class="container">
         <div class="send--block">
           <img src="./images/send.png" alt="" />
-          <h2 class="send__title">Подключите Telegram чат уже сегодня</h2>
-          <div class="send--form">
-            <input
-              class="send__input"
-              type="text"
-              name="email"
-              placeholder="Введите e-mail"
-            />
-            <button class="send__btn btn">Отправить</button>
+          <div class="send--flex">
+            <h2 class="send__title">Подключите Telegram чат уже сегодня</h2>
+            <div class="send--form">
+              <input
+                class="send__input"
+                type="text"
+                name="email"
+                placeholder="Введите e-mail"
+              />
+              <button class="send__btn btn">Отправить</button>
+            </div>
           </div>
         </div>
       </div>
