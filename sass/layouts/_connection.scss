@@ -11,11 +11,22 @@
     margin: 0 auto;
     max-width: 331px;
     margin-bottom: 24px;
+    @media screen and (max-width: 1439.98px) {
+      max-width: 491px;
+    }
+    @media screen and (min-width: 1440px) {
+      min-width: 100%;
+      margin-bottom: 56px;
+      line-height: 1.39;
+    }
   }
   &__item {
     margin: 0 auto;
     padding-top: 23px;
     padding-bottom: 24px;
+  }
+  &__item:nth-child(2) {
+    margin-top: 53px;
   }
   &__number {
     margin-bottom: 16px;
@@ -44,6 +55,11 @@
     font-size: 14px;
     line-height: 1.57;
     /* or 157% */
+    @media screen and (min-width: 768px) {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 210px;
+    }
   }
   &__img {
     display: inline-block;

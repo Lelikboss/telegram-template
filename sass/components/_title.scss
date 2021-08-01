@@ -2,4 +2,9 @@
   font-family: var(--extrabold-font);
   font-size: 32px;
   line-height: 1.25;
+  @media screen and (min-width: 1440px) {
+    font-size: 46px;
+    line-height: 0.67;
+    /* identical to box height, or 67% */
+  }
 }

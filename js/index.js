@@ -16,10 +16,10 @@ navEl.addEventListener("click", (e) => {
     navEl.classList.remove("is-open");
     menuBtnRef.classList.remove("is-open");
   }
-  if (e.target instanceof HTMLButtonElement) {
-    navEl.classList.remove("is-open");
-    menuBtnRef.classList.remove("is-open");
-  }
+  // if (e.target instanceof HTMLButtonElement) {
+  //   navEl.classList.remove("is-open");
+  //   menuBtnRef.classList.remove("is-open");
+  // }
 });
 
 const enterBtn = document.querySelector(".enter--btn"); //! кнопка входа
@@ -29,11 +29,11 @@ const mobileAuthorBlockEl = document.querySelector(".mobile-author--block");
 const mobileMenuEl = document.querySelector(".mobile--menu"); //! menu
 const headerNavEl = document.querySelector(".header--nav"); //! menu
 
-enterBtn.addEventListener("click", clickOnEnterBtn);
-tabletEnterBtn.addEventListener("click", clickOnEnterBtn);
-function clickOnEnterBtn() {
-  mobileMenuEl.classList.remove("inactive--menu");
-  headerNavEl.classList.remove("inactive--menu");
-  authorBlockEl.classList.add("inactive--menu");
-  mobileAuthorBlockEl.classList.add("inactive--menu");
-}
+// enterBtn.addEventListener("click", clickOnEnterBtn);
+// tabletEnterBtn.addEventListener("click", clickOnEnterBtn);
+// function clickOnEnterBtn() {
+//   // mobileMenuEl.classList.remove("inactive--menu");
+//   // headerNavEl.classList.remove("inactive--menu");
+//   // authorBlockEl.classList.add("inactive--menu");
+//   // mobileAuthorBlockEl.classList.add("inactive--menu");
+// }

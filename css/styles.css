@@ -188,6 +188,14 @@
   line-height: 1.25;
 }
 
+@media screen and (min-width: 1440px) {
+  .title {
+    font-size: 46px;
+    line-height: 0.67;
+    /* identical to box height, or 67% */
+  }
+}
+
 html {
   box-sizing: border-box;
 }
@@ -263,6 +271,14 @@ address {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1110px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
 .hero {
   background: rgba(242, 247, 255, 0.5);
   backdrop-filter: blur(100px);
@@ -289,6 +305,15 @@ address {
   /* or 125% */
 }
 
+@media screen and (min-width: 1440px) {
+  .hero__title {
+    max-width: 383px;
+    font-size: 50px;
+    line-height: 1.2;
+    /* or 120% */
+  }
+}
+
 .hero__title--change-color {
   color: var(--accent-color);
 }
@@ -302,6 +327,15 @@ address {
 @media screen and (min-width: 768px) {
   .hero__content {
     min-width: 270px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero__content {
+    min-width: 482px;
+    font-size: 24px;
+    line-height: 1.42;
+    /* or 142% */
   }
 }
 
@@ -323,6 +357,13 @@ address {
   border-radius: 6px;
 }
 
+@media screen and (min-width: 1440px) {
+  .hero__picture {
+    position: relative;
+    right: 100px;
+  }
+}
+
 .hero__content-item:nth-child(3) {
   margin-top: 32px;
 }
@@ -334,9 +375,12 @@ address {
   padding-bottom: 60px;
 }
 
-@media screen and (min-width: 768px) {
+.about__container {
+  display: flex;
+}
+
+@media screen and (max-width: 1439.98px) {
   .about__container {
-    display: flex;
     justify-content: space-between;
   }
 }
@@ -363,6 +407,14 @@ address {
   font-family: var(--semibold-font);
   font-size: 20px;
   line-height: 1.6;
+}
+
+@media screen and (min-width: 1440px) {
+  .about__item-title {
+    font-size: 24px;
+    line-height: 1.33;
+    /* identical to box height, or 133% */
+  }
 }
 
 .about__item-text {
@@ -398,6 +450,15 @@ address {
   line-height: 1.22;
   /* or 122% */
   color: var(--black-color);
+}
+
+@media screen and (min-width: 1440px) {
+  .about__rules {
+    margin-left: 170px;
+    font-size: 11px;
+    line-height: 1.36;
+    /* or 136% */
+  }
 }
 
 .about__rules-item {
@@ -454,6 +515,14 @@ address {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .tariffs__pretitle {
+    font-size: 24px;
+    line-height: 1.33;
+    /* identical to box height, or 133% */
+  }
+}
+
 .tariffs__item {
   padding-bottom: 50px;
   margin-bottom: 24px;
@@ -468,6 +537,12 @@ address {
   }
   .tariffs__item:not(:last-child) {
     margin-right: 20px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .tariffs__item {
+    max-width: 350px;
   }
 }
 
@@ -550,10 +625,28 @@ address {
   margin-bottom: 24px;
 }
 
+@media screen and (max-width: 1439.98px) {
+  .connection__title {
+    max-width: 491px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .connection__title {
+    min-width: 100%;
+    margin-bottom: 56px;
+    line-height: 1.39;
+  }
+}
+
 .connection__item {
   margin: 0 auto;
   padding-top: 23px;
   padding-bottom: 24px;
+}
+
+.connection__item:nth-child(2) {
+  margin-top: 53px;
 }
 
 .connection__number {
@@ -585,6 +678,14 @@ address {
   font-size: 14px;
   line-height: 1.57;
   /* or 157% */
+}
+
+@media screen and (min-width: 768px) {
+  .connection__text {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 210px;
+  }
 }
 
 .connection__img {
@@ -620,6 +721,12 @@ address {
 .reviews__title {
   margin-bottom: 40px;
   text-align: center;
+}
+
+@media screen and (min-width: 1440px) {
+  .reviews__title {
+    margin-bottom: 48px;
+  }
 }
 
 .reviews--cloud {
@@ -727,6 +834,15 @@ address {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .send__title {
+    font-size: 33px;
+    line-height: 1.24;
+    /* or 124% */
+    min-width: 445px;
+  }
+}
+
 .send__input {
   width: 150px;
   padding-top: 12px;
@@ -741,6 +857,12 @@ address {
 @media screen and (min-width: 768px) {
   .send__input {
     min-width: 210px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .send__input {
+    min-width: 248px;
   }
 }
 
@@ -759,6 +881,12 @@ address {
 .send--form {
   display: flex;
   justify-content: center;
+}
+
+@media screen and (min-width: 1440px) {
+  .send--form {
+    justify-content: start;
+  }
 }
 
 .send--block {
@@ -785,11 +913,22 @@ address {
 
 .footer__container {
   display: flex;
-  justify-content: space-between;
+}
+
+@media screen and (max-width: 1439.98px) {
+  .footer__container {
+    justify-content: space-between;
+  }
 }
 
 .footer__logo {
   margin-right: 33px;
+}
+
+@media screen and (min-width: 1440px) {
+  .footer__logo {
+    margin-right: 392px;
+  }
 }
 
 .footer__logo-name {

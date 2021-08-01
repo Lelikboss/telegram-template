@@ -64,6 +64,7 @@
           <button
             type="button"
             class="header__btn-tabl header__btn-tabl--enter tablet-enter--btn"
+            data-modal-open
           >
             Вход
           </button>
@@ -88,7 +89,11 @@
     <div class="mobile-menu" data-menu>
       <ul class="mobile-menu__author list mobile-author--block">
         <li class="mobile-menu__author-item">
-          <button type="button" class="mobile-menu__author-btn btn enter--btn">
+          <button
+            type="button"
+            class="mobile-menu__author-btn btn enter--btn"
+            data-modal-open
+          >
             Вход
           </button>
         </li>
@@ -137,7 +142,7 @@
             </li>
           </ul>
         </div>
-        <picture>
+        <picture class="hero__picture">
           <source
             srcset="./images/hero.bg.png 1x"
             media="(max-width: 767.98px)"
@@ -145,7 +150,12 @@
           />
           <source
             srcset="./images/bg2.png 1x"
-            media="(min-width: 768px)"
+            media="(max-width: 1439.98px)"
+            type="image/png"
+          />
+          <source
+            srcset="./images/desctop-bg.png 1x"
+            media="(min-width: 1440px)"
             type="image/png"
           />
           <img src="./images/hero.bg.png" alt="asd" />
@@ -228,7 +238,19 @@
           <li class="about__rules-item">
             Спасибо! Сейчас создам Telegram-бота
           </li>
-          <img class="about__rules-img" src="./images/phone.png" alt="" />
+          <picture class="about__rules-img">
+            <source
+              srcset="./images/phone.png 1x"
+              media="(max-width: 1439.98px)"
+              type="image/png"
+            />
+            <source
+              srcset="./images/phone3.png 1x"
+              media="(min-width: 1440px)"
+              type="image/png"
+            />
+            <img src="./images/phone.png" alt="" />
+          </picture>
         </ul>
       </div>
     </section>
@@ -273,7 +295,19 @@
             <p class="connection__text">
               Вы создаёте Telegram бота для вашего сайта
             </p>
-            <img class="connection__img" src="./images/connect1.png" alt="" />
+            <picture>
+              <source
+                srcset="./images/connect1.png"
+                media="(max-width: 1439.98px)"
+                type="image/png"
+              />
+              <source
+                srcset="./images/connect-deskt1.png 1x"
+                media="(min-width: 1440px)"
+                type="image/png"
+              />
+              <img class="connection__img" src="./images/connect1.png" alt="" />
+            </picture>
           </li>
           <li class="connection__item">
             <p class="connection__number">2</p>
@@ -281,7 +315,19 @@
             <p class="connection__text">
               Tocha подключает Telegram бота к вашиму сайту
             </p>
-            <img class="connection__img" src="./images/connect2.png" alt="" />
+            <picture>
+              <source
+                srcset="./images/connect2.png"
+                media="(max-width: 1439.98px)"
+                type="image/png"
+              />
+              <source
+                srcset="./images/connect-deskt2.png 1x"
+                media="(min-width: 1440px)"
+                type="image/png"
+              />
+              <img class="connection__img" src="./images/connect2.png" alt="" />
+            </picture>
           </li>
           <li class="connection__item">
             <p class="connection__number">3</p>
@@ -289,7 +335,19 @@
             <p class="connection__text">
               Консультант отвечает на вопросы посетителей сайта
             </p>
-            <img class="connection__img" src="./images/connect3.png" alt="" />
+            <picture>
+              <source
+                srcset="./images/connect3.png"
+                media="(max-width: 1439.98px)"
+                type="image/png"
+              />
+              <source
+                srcset="./images/connect-deskt3.png 1x"
+                media="(min-width: 1440px)"
+                type="image/png"
+              />
+              <img class="connection__img" src="./images/connect3.png" alt="" />
+            </picture>
           </li>
         </ul>
       </div>
@@ -430,27 +488,39 @@
       <button class="mobile-menu__btn registration-btn btn">Регистрация</button> -->
 
     <!--- Вход  -->
-    <!-- <form class="enter-form">
-        <h2 class="enter-form__title">Вход</h2>
-        <label class="enter-form__label">
-          <input
-            class="enter-form__tel enter-form__field"
-            type="text"
-            name="tel"
-            placeholder="Телефон"
-          />
-        </label>
-        <label class="enter-form__label">
-          <input
-            class="enter-form__pass enter-form__field"
-            type="password"
-            name="password"
-            placeholder="Пароль"
-          />
-          <span>Напомнить пароль</span>
-        </label>
-        <button>Войти</button>
-      </form> -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal__btn" data-modal-close>
+          <svg class="modal__btn-icon">
+            <use
+              class="icon--close"
+              href="./images/sprite.svg#icon-close-btn"
+            ></use>
+          </svg>
+        </button>
+        <form class="enter-form">
+          <h2 class="enter-form__title">Вход</h2>
+          <label class="enter-form__label">
+            <input
+              class="enter-form__tel enter-form__field"
+              type="text"
+              name="tel"
+              placeholder="Телефон"
+            />
+          </label>
+          <label class="enter-form__label">
+            <input
+              class="enter-form__pass enter-form__field"
+              type="password"
+              name="password"
+              placeholder="Пароль"
+            />
+            <span>Напомнить пароль</span>
+          </label>
+          <button>Войти</button>
+        </form>
+      </div>
+    </div>
     <!--- Регистрация -->
     <!-- <form>
         <h2>Регистрация</h2>
@@ -520,6 +590,7 @@
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
     <script src="js/slider.js"></script>
+    <script src="js/modal.js"></script>
     <script src="js/index.js"></script>
   </body>
 </html>

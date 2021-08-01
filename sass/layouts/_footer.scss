@@ -4,10 +4,15 @@
   background: #1d2530;
   &__container {
     display: flex;
-    justify-content: space-between;
+    @media screen and (max-width: 1439.98px) {
+      justify-content: space-between;
+    }
   }
   &__logo {
     margin-right: 33px;
+    @media screen and (min-width: 1440px) {
+      margin-right: 392px;
+    }
   }
   &__logo-name {
     font-family: var(--bold-font);
