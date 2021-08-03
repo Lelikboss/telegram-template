@@ -5,6 +5,9 @@
   padding-bottom: 60px;
   &__container {
     display: flex;
+    @media screen and (max-width: 767.98px) {
+      flex-direction: column;
+    }
     @media screen and (max-width: 1439.98px) {
       justify-content: space-between;
     }
@@ -56,6 +59,7 @@
   }
 
   &__rules {
+    margin: 0 auto;
     padding-bottom: 38px;
     position: relative;
     z-index: 100;
@@ -96,4 +100,7 @@
     position: absolute;
     top: 0;
   }
+}
+.container__about--block {
+  margin: 0 auto;
 }
