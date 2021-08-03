@@ -58,11 +58,21 @@
       margin-right: 11px;
       background-color: #f1e4ff;
       color: var(--accent-color);
+      transition: color 500ms ease-in-out, background-color 500ms ease-in-out;
+      &:hover {
+        background-color: #593e75;
+        color: #f1f1f1;
+      }
     }
     &__btn-tabl--reg {
       background-color: var(--accent-color);
       box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
       color: var(--white-color);
+      transition: color 500ms ease-in-out, background-color 500ms ease-in-out;
+      &:hover {
+        background-color: #4a296d;
+        color: #f1f1f1;
+      }
     }
   }
 }
